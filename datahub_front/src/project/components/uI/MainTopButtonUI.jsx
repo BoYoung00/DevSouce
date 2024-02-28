@@ -1,4 +1,4 @@
-import styles from "../styles.module.css";
+import styles from "../mainStyles.module.css";
 
 export default function MainTopButtonUI({buttonName}){
     return(

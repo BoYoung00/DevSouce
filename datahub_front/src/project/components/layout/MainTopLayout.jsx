@@ -1,4 +1,4 @@
-import styles from "../styles.module.css";
+import styles from "../mainStyles.module.css";
 import MainTopButtonUI from "../uI/MainTopButtonUI";
 
 export default function MainTopLayout(){

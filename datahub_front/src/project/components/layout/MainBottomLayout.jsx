@@ -1,5 +1,5 @@
 import MainBottomUI from "../uI/MainBottomUI";
-import styles from "../styles.module.css";
+import styles from "../mainStyles.module.css";
 
 export default function MainBottomLayout(){
     return(
