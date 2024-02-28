@@ -19,46 +19,43 @@ body{font-size: 1rem;}
 }
 
 .mainCircle {
-    width: 16rem; height: 16rem;
+    width: 18rem; height: 18rem;
     border-radius: 50%;
     padding-top: 2.5rem;
     white-space: pre-line; /*텍스트 줄바꿈*/
 }
 
 .mainStepText {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: bold;
     text-align: center;
+    margin: 1.3rem 0;
 }
 
 .mainBigText {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-top: .9rem;
     line-height: 1.5;
 }
 
 .mainSmallText {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: .65rem 0;
     padding: .5rem .4rem;
     border-bottom: .1rem solid #e7e1e1;
 }
 
-.mainBlueText {
-    font-size: 1rem;
-    color: #00A3FF;
-}
+.mainBlueText { color: #00A3FF; }
 
 .mainBottomButton {
-    width: 10rem;
+    width: 12.5rem; height: 2.2rem;
     background: white;
-    border-radius: 10px;
+    border-radius: 8px;
     border-color: #00A3FF;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -88,17 +85,19 @@ body{font-size: 1rem;}
 
 /*MainTopButtonUI*/
 .mainTopButton {
-    width: 13rem; height: 2.5rem;
+    width: 13rem; height: 3rem;
+    font-size: .9rem;
     border-radius: 30px;
     border: none;
     background: #00A3FF;
     color: white;
     font-weight: bold;
-    margin: 1.5rem 1rem;
+    margin: 1.7rem 2rem 1rem 0;
 }
 
 /*MainTopLayout*/
 .mainTopText {
+    font-size: 2rem;
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -111,7 +110,7 @@ body{font-size: 1rem;}
 }
 
 .mainTopLayout {
-    margin: 1.5rem 0 5rem 0;
+    margin-bottom: 5rem;
 }
 
 /*mainPage*/
@@ -121,4 +120,10 @@ body{font-size: 1rem;}
     background-size: cover;
     background-position: center;
     width: 100%; height: 100vh;
+}
+
+/*반응형*/
+@media screen and (max-width:1540px) {
+    html{font-size: 15px;}
+    body{font-size: 1rem;}
 }
