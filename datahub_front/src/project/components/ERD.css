@@ -1,0 +1,15 @@
+.erd {
+    position: relative;
+}
+
+.table {
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    position: absolute;
+}
+
+.relationships {
+    position: absolute;
+}
