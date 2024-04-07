@@ -13,6 +13,7 @@ import CommitSearchPage from "../devTree/Components/page/CommitSearchPage";
 import HistoryViewPage from "../devTree/Components/page/HistoryViewPage";
 import RestAPIBuilderPage from "../project/components/page/RestAPIBuilderPage";
 import TableBoxLayout from "../project/components/layout/TableBoxLayout";
+import LoginPage from "../authentication/LoginPage";
 
 
 export default function AppRouter() {
@@ -39,6 +40,7 @@ export default function AppRouter() {
                     <Route path='/history' element={<HistoryViewPage />} />
                     <Route path='/restApi' element={<RestAPIBuilderPage/>}/>
                     <Route path='/createTable' element={<TableBoxLayout/>}/>
+                    <Route path='/auth/login' element={<LoginPage/>}/>
                     {/* 일치하는 경로가 없을 때의 에러 페이지 */}
                     <Route path='*' element={<ErrorPage />} />
                 </Routes>

@@ -57,6 +57,7 @@ class ColumnService {
             val data = exampleDataList.filter {data ->
                 column == data.column
             }.map { it.data }
+
             list.add(ListDTO(data))
         }
 

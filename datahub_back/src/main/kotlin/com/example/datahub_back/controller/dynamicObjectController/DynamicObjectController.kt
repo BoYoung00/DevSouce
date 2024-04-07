@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/source")
-@CrossOrigin(origins = ["http://localhost:3000"])
+@CrossOrigin(origins = ["http://localhost:3000" , "*"])
 class DynamicObjectController (
     @Autowired
     private val dynamicObjectService: DynamicObjectService
@@ -25,23 +25,23 @@ class DynamicObjectController (
         return dynamicObjectService.createDynamicObject(tableHash, data)
     }
 
-    @GetMapping("/{tableHash}/data/{id}")
-    fun getDynamicObject(@PathVariable tableHash: String, @PathVariable id: Long): Any {
-        return dynamicObjectService.getDynamicObject(tableHash, id)
-    }
-
-
-    // UPDATE
-    @PutMapping("/{tableHash}/data/{id}")
-    fun updateDynamicObject(@PathVariable tableHash: String, @PathVariable id: Long, @RequestBody updateData: JsonNode): Any {
-        return dynamicObjectService.updateDynamicObject(tableHash, id, updateData)
-    }
-
-    // DELETE
-    @DeleteMapping("/{tableHash}/data/{id}")
-    fun deleteDynamicObject(@PathVariable tableHash: String, @PathVariable id: Long) {
-        dynamicObjectService.deleteDynamicObject(tableHash, id)
-    }
+//    @GetMapping("/{tableHash}/data/{id}")
+//    fun getDynamicObject(@PathVariable tableHash: String, @PathVariable id: Long): Any {
+//        return dynamicObjectService.getDynamicObject(tableHash, id)
+//    }
+//
+//
+//    // UPDATE
+//    @PutMapping("/{tableHash}/data/{id}")
+//    fun updateDynamicObject(@PathVariable tableHash: String, @PathVariable id: Long, @RequestBody updateData: JsonNode): Any {
+//        return dynamicObjectService.updateDynamicObject(tableHash, id, updateData)
+//    }
+//
+//    // DELETE
+//    @DeleteMapping("/{tableHash}/data/{id}")
+//    fun deleteDynamicObject(@PathVariable tableHash: String, @PathVariable id: Long) {
+//        dynamicObjectService.deleteDynamicObject(tableHash, id)
+//    }
 
 
 }

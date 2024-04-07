@@ -41,17 +41,17 @@ class DynamicObjectService(
         return "성공적으로 객체가 저장되었습니다."
     }
 
-    fun getDynamicObject(objectName: String, id: Long){
-
-    }
-
-    fun updateDynamicObject(objectName: String, id: Long,updateData: JsonNode){
-
-    }
-
-    fun deleteDynamicObject(objectName: String, id: Long){
-
-    }
+//    fun getDynamicObject(objectName: String, id: Long){
+//
+//    }
+//
+//    fun updateDynamicObject(objectName: String, id: Long,updateData: JsonNode){
+//
+//    }
+//
+//    fun deleteDynamicObject(objectName: String, id: Long){
+//
+//    }
 
     fun getTableHash(tableID : Long) =
         tableService.findByTableID(tableID).tableHash

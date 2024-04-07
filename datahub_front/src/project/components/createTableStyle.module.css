@@ -1,10 +1,10 @@
 @font-face {
     font-family: "KoPubWorld Dotum Bold";
-    src: url("../../default/font/KoPubWorld Dotum Bold.ttf");
+    src: url("../../authentication/components/page/default/font/KoPubWorld Dotum Bold.ttf");
 }
 @font-face {
     font-family: "GmarketSansTTFBold";
-    src: url("../../default/font/GmarketSansTTFBold.ttf");
+    src: url("../../authentication/components/page/default/font/GmarketSansTTFBold.ttf");
 }
 
 .tableBox{
@@ -240,7 +240,9 @@
     width: 260px;
     height: auto;
     margin-left: auto;
-    position: fixed;
+    position: absolute;
+    bottom: 300px;
+    right: 130px;
 }
 
 .searchButton{

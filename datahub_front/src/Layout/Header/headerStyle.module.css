@@ -1,10 +1,10 @@
 @font-face {
     font-family: "GmarketSansTTFBold";
-    src: url("../../default/font/GmarketSansTTFBold.ttf");
+    src: url("../../authentication/components/page/default/font/GmarketSansTTFBold.ttf");
 }
 @font-face {
     font-family: "GmarketSansTTFBold";
-    src: url("../../default/font/GmarketSansTTFBold.ttf");
+    src: url("../../authentication/components/page/default/font/GmarketSansTTFBold.ttf");
 }
 
 html{font-size: 20px;}

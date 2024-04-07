@@ -1,6 +1,6 @@
 import styles from "../createTableStyle.module.css";
-import TableSearchLayout from "../layout/TableSearchLayout";
 import React, { useState } from "react";
+import TableSearchLayout from "../layout/TableSearchLayout";
 
 export default function JoinColumnUI({ row, index, handleSelectChange }) {
     const [showSearch, setShowSearch] = useState(false); // searchBox 렌더링
@@ -21,6 +21,7 @@ export default function JoinColumnUI({ row, index, handleSelectChange }) {
             <button onClick={renderSearch} className={styles.searchButton}>
                 검색 ▼
             </button>
+
             <div className={styles.searchBox}>
                 {showSearch && (
                     <TableSearchLayout

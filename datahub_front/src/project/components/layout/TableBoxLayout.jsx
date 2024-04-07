@@ -1,5 +1,4 @@
 import styles from '../createTableStyle.module.css';
-import TableTitleUI from "../uI/TableTitleUI";
 import TableNameUI from "../uI/TableNameUI";
 import InsertTableNameUI from "../uI/InsertTableNameUI";
 import InsertDBNameUI from "../uI/InsertDBNameUI";
